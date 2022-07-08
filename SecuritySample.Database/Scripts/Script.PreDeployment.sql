@@ -1,0 +1,6 @@
+﻿IF NOT EXISTS (SELECT * FROM SYS.syslogins WHERE NAME = 'SecuritySample')
+BEGIN
+	CREATE LOGIN SecuritySample WITH PASSWORD = 'Test1234=';
+END
+
+
